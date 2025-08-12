@@ -56,6 +56,7 @@ Next, open the RNBO patcher you'd like to work with, and navigate to the export 
 ![C++ source code export in the sidebar](./img/cpp-export-location.png)
 
 Export your project, making sure to export into the `export` folder in this directory. Your export directory should look something like this:
+Make sure the export is named: rnbo_source(.cpp).
 
 ```
 export/
