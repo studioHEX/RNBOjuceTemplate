@@ -63,6 +63,22 @@ export/
 ├─ rnbo_source.cpp
 ├─ README.md
 ```
+### Update the Juce submodule
+
+```
+# If using git submodules
+cd thirdparty/juce
+git fetch
+git checkout 8.0.8  # or latest stable version
+
+# Then rebuild
+cd ../..
+rm -rf build
+mkdir build && cd build
+cmake ..
+make
+```
+
 
 Whenever you make a change to your RNBO patch, remember to export the source code again to update this file. Now that you've exported your RNBO code, it's time to build. This project uses CMake, which gives us the flexibility of using whatever build system we want. Start by moving to the build directory.
 
